@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="icon" href="todolist_logo.jpg" />
+    <style>
+        body {
+            background-image: url('https://womenwhowinatlife.com/wp-content/uploads/2022/05/3DA045C7-9610-421B-9716-69249DA22F7C-1080x675.jpeg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+            border-top: 5px solid #009578;
+            border-bottom: 5px solid #009578;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding: 0.5em;
+            background: rgba(172, 142, 103, 0.8);
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .todo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+        }
+
+        .todo__value {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+        .delete-label {
+            background: none;
+            border: none;
+            color: red;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .todo__delete {
+            display: none;
+        }
+
+        .todo__delete:checked + .todo {
+            display: none;
+        }
+
+        .todo_checkbox:checked + .todo_value {
+            text-decoration: line-through;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <input type="checkbox" id="delete1" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete1" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete2" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete2" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete3" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete3" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete4" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete4" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete5" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete5" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete6" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete6" class="delete-label">Delete</label>
+        </div>
+
+        <input type="checkbox" id="delete7" class="todo__delete">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)">
+            <input class="todo__checkbox" type="checkbox">
+            <label for="delete7" class="delete-label">Delete</label>
+        </div>
+    </div>
+</body>
+</html>
